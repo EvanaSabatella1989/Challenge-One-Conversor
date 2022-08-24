@@ -9,7 +9,15 @@ public class Principal {
         
         while (true) {
             String opciones = JOptionPane.showInputDialog(null,"Seleccione una "
-                    + "opcion de conversion", "Menu", JOptionPane.PLAIN_MESSAGE, null, new Object[] {"Conversor de Moneda", "Conversor de Temperatura"}, "Elegir").toString();
+                    + "opcion de conversion", "Menu", JOptionPane.PLAIN_MESSAGE, null, new Object[] {"Conversor de Monedas", "Conversor de Temperatura"}, "Elegir").toString();
+            switch (opciones) {
+                case "Conversor de Monedas":
+                    System.out.println("Conversor de Monedas");
+                    //break;
+                default:
+                    throw new AssertionError();
+            }
+        
         }
         
     }
